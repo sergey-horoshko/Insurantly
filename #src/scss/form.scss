@@ -1,0 +1,119 @@
+.form {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg_contact.jpg');
+  background-size: cover;
+  @media (max-width: $md2+px){
+    background-position: 73%;
+  }
+  @media (max-width: $md4+px){
+    background-position: 65%;
+  }
+  &:before{
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @media (min-width: $md3+px){
+      background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%);
+    }
+    @media (max-width: $md3+px){
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+	&__content {
+    padding-top: 90px;
+    padding-bottom: 89px;
+	}
+
+	&__text {
+    color: #252B42;
+    @media (max-width: $md3+px){
+      width: 480px;
+      margin: 0 auto;
+    }
+    @media (max-width: 520px){
+      width: 300px;
+    }
+	}
+
+	&__suptext {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+	}
+
+	&__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+	}
+
+	&__box {
+    margin-top: 40px;
+	}
+
+	&__box-item {
+    display: flex;
+    &:last-child{
+      @media(min-width: $md3+px){
+        display: block;
+      }
+    }
+    @media (max-width: $md3+px){
+      flex-direction: column;
+      align-items: center;
+    }
+    &:nth-child(2){
+      margin-top: 31px;
+      @media (max-width: $md3+px){
+        margin-top: 20px;
+      }
+    }
+	}
+
+	&__line {
+    &:nth-child(2){
+      margin-left: 20px;
+      @media (max-width: $md3+px){
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+    }
+	}
+
+	&__box-item {
+    & .btn{
+      margin-top: 40px;
+      @media (max-width: $md3+px){
+        width: 296px;
+      }
+    }
+	}
+
+.form__textarea{
+  margin-top: 20px;
+  padding: 16px 20px;
+  width: 613px;
+  height: 140px;
+  max-width: 613px;
+  max-height: 140px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #737373;
+  letter-spacing: 0.2px;
+  resize: none;
+  @media (max-width: $md3+px){
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 296px;
+  }
+}
+}

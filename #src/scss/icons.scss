@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'icons';
+  src:   url('../fonts/icons.woff?pro1v1') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-youtube:before {
+  content: "\e90e";
+  color: #e42f08;
+}
+._icon-arrow-down:before {
+  content: "\e90d";
+}
+._icon-map:before {
+  content: "\e900";
+}
+._icon-message:before {
+  content: "\e901";
+}
+._icon-okey:before {
+  content: "\e902";
+}
+._icon-search:before {
+  content: "\e903";
+}
+._icon-set:before {
+  content: "\e904";
+}
+._icon-shop:before {
+  content: "\e905";
+}
+._icon-tel:before {
+  content: "\e906";
+}
+._icon-twitter:before {
+  content: "\e907";
+}
+._icon-wallet:before {
+  content: "\e908";
+}
+._icon-arrow:before {
+  content: "\e909";
+}
+._icon-facebook:before {
+  content: "\e90a";
+}
+._icon-inst:before {
+  content: "\e90b";
+}
+._icon-mans:before {
+  content: "\e90c";
+}

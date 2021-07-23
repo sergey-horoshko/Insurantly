@@ -1,0 +1,249 @@
+.pricing {
+  background: #252B42;
+
+	&__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 112px;
+    padding-bottom: 154px;
+    @media(max-width: $md4+px){
+      padding-top: 0px;
+    }
+	}
+
+	&__text {
+    text-align: center;
+	}
+
+	&__box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 106px;
+    @media (max-width: $md3+px){
+      flex-direction: column;
+      margin-top: 0px;
+    }
+	}
+
+}
+
+._container {
+
+}
+
+.pricing-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.pricing-subtext {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+  max-width: 420px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  @media(max-width: $md4+px){
+    font-weight: 700;
+    text-align: center;
+    max-width: 280px;
+  }
+}
+
+.box__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  &:nth-child(2){
+    margin: 0px 31px;
+  }
+  @media (max-width: 992px){
+  padding: 50px 0px;
+  @include adaptiv-value('padding-left', 80, 30, 3);
+  @include adaptiv-value('padding-right', 80, 30, 3);
+  }
+  @media (max-width: $md3+px){
+    margin-top: 56px;
+    &:nth-child(2){
+      margin: 56px 0px 0px;
+    }
+  }
+}
+
+.card-info {
+
+}
+
+.card-name {
+  display: block;
+  color: #252B42;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-subtitle {
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  max-width: 165px;
+  color: #737373;
+}
+
+.card-price {
+  display: block;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #23A6F0;
+  @media (max-width: $md3+px){
+    display: none;
+  }
+}
+
+.card-price-media {
+  display: none;
+  @media (max-width: $md3+px){
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    color: #23A6F0;
+    &::after{
+      position: absolute;
+      content: "$";
+      display: inline;
+      color: #23A6F0;
+      font-weight: 700;
+      font-size: 16px;
+      margin-left: 10px;
+      top: -10px;
+    }
+    &._fix{
+      text-align: center;
+      margin-right: 15px;
+    }
+  }
+}
+
+.card-period {
+  display: block;
+  text-align: center;
+  color: #8EC2F2;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  @media (max-width: $md3+px){
+      margin-top: -20px;
+      margin-left: 110px;
+      &._fix{
+        margin-left: 95px;
+      }
+  }
+}
+
+.btn-card {
+  margin-top: 35px;
+  padding: 15px 82px;
+  @media (max-width: 1102px){
+    padding: 15px 70px;
+  }
+  @media (max-width: 992px){
+    padding: 15px 40px;
+    margin: 35px auto 0px;
+  }
+  @media (max-width: $md3+px){
+    padding: 15px 75px;
+    display: none;
+  }
+}
+
+.card-advantage {
+  margin-top: 35px;
+  margin-left: 8px;
+}
+
+.card-body {
+  font-weight: 600;
+  color: #252B42;
+}
+
+.card-list-item {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.okay-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  background: #2DC071;
+  text-align: center;
+}
+
+.okay-grey{
+  background: #BDBDBD;
+}
+._position{
+  position: relative;
+  &::before{
+    content: 'New';
+    position: absolute;
+    top: -26px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 52px;
+    background: #E77C40;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+}
+
+.media-btn{
+  display: none;
+  @media(max-width: $md3+px){
+    display: block;
+  }
+}
+.media-text{
+  @media(max-width: $md4+px){
+    display: block;
+  }
+}
